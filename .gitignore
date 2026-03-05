@@ -2,3 +2,7 @@
 .env
 .env.local
 .env.*.local
+
+# Ignorar dependencias
+node_modules/
+
