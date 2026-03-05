@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     if (req.body.markedBy) {
       const User = require('../models/User');
       await User.findByIdAndUpdate(req.body.markedBy, { $inc: { points: 2 } });
-      console.log(`Usuario ${req.body.markedBy} ha ganado 2 puntos por crear un FreeSpot.`);
+    //   console.log(`Usuario ${req.body.markedBy} ha ganado 2 puntos por crear un FreeSpot.`);
     }
     res.status(201).json(freeSpot);
   } catch (err) {
